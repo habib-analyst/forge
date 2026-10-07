@@ -1,0 +1,7 @@
+keras>=3.0
+numpy
+scikit-learn
+# pick ONE backend (torch is the tested CPU path):
+# torch
+# tensorflow
+# jax

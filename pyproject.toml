@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forge-agentic"
+version = "0.1.0"
+description = "FORGE: an agentic system that autonomously builds, trains, debugs and iterates Keras 3 models from natural-language task descriptions"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "keras>=3.0",
+    "numpy",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+torch-backend = ["torch"]
+jax-backend = ["jax", "flax"]
+tf-backend = ["tensorflow"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["forge*"]

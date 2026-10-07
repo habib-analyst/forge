@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+benchmark_runs/
+demo_runs/
+calib_runs/
+dbg_calib*/
+*.json
+!requirements.txt
+.DS_Store
+.pytest_cache/
